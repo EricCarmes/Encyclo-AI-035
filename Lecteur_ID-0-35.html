@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Smartbook - AudioBook</title>
+  <link rel="stylesheet" href="plyr.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img src="ID-0-35-Couverture.jpg" alt="Couverture" style="width: 20%; height: auto; margin-bottom: 20px;">
+
+  <div class="logos">
+    <img src="PLANCHE-1a.jpg" alt="Logo AudioBook" style="width: 5%; height: auto; margin-bottom: 20px;">
+    <img src="Logo_resized.jpg" alt="Logo Encyclo-AI" style="width: 10%; height: auto; margin-bottom: 20px;">
+  </div>
+
+<!-- Bloc bouton Play + potentiomètre vitesse -->
+<div class="player-controls">
+  <!-- Gros bouton Play -->
+  <button id="bigPlayBtn" aria-label="Lire ou mettre en pause le livre audio">▶</button>
+
+  <!-- Bloc vitesse -->
+  <div id="speedControl">
+    <div class="speed-label">Vitesse</div>
+    <div class="speed-knob-wrapper">
+      <input type="range" id="speedKnob" min="0.9" max="1.1" step="0.05" value="1" orient="vertical">
+
+      <!-- Colonne repères alignés -->
+      <div id="speedLabels">
+        <span>++</span>
+        <span>+</span>
+        <span>=</span>
+        <span>-</span>
+        <span>--</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Lecteur audio -->
+  <audio id="audioPlayer" controls></audio>
+
+  <!-- Playlist -->
+  <ul id="playlist">
+    <li><a href="Introduction.mp3" style="font-weight: bold;">INTRODUCTION - L'IMPORTANCE DES MÉTHODOLOGIES AGILES DANS L'INNOVATION DES START-UPS</a></li>
+
+    <li style="font-weight: bold;">Chapitre 1 - INTRODUCTION AU PRODUCT MANAGEMENT : DÉFINITION ET IMPORTANCE DANS LES START-UPS</li>
+    <ul>
+      <li><a href="Chapitre1-1.mp3">1.1 - Origines et évolution du Product Management</a></li>
+      <li><a href="Chapitre1-2.mp3">1.2 - Rôle du Product Manager dans une start-up</a></li>
+      <li><a href="Chapitre1-3.mp3">1.3 - Importance stratégique du Product Management</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 2 - COMPÉTENCES CLÉS DU PRODUCT MANAGER : TECHNIQUES, ANALYTIQUES, STRATÉGIQUES ET INTERPERSONNELLES</li>
+    <ul>
+      <li><a href="Chapitre2-1.mp3">2.1 - Compétences techniques pour collaborer avec les équipes de développement</a></li>
+      <li><a href="Chapitre2-2.mp3">2.2 - Analyse des données pour des décisions éclairées</a></li>
+      <li><a href="Chapitre2-3.mp3">2.3 - Leadership et communication pour fédérer les équipes</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 3 - MÉTHODOLOGIES AGILES : SCRUM, KANBAN ET LEUR APPLICATION DANS LES START-UPS</li>
+    <ul>
+      <li><a href="Chapitre3-1.mp3">3.1 - Introduction aux méthodologies agiles</a></li>
+      <li><a href="Chapitre3-2.mp3">3.2 - Scrum : Structure et avantages</a></li>
+      <li><a href="Chapitre3-3.mp3">3.3 - Kanban : Visualisation et flux de travail</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 4 - OUTILS DE GESTION DE PROJET : JIRA, TRELLO ET LEUR IMPACT SUR LA COLLABORATION</li>
+    <ul>
+      <li><a href="Chapitre4-1.mp3">4.1 - Présentation des outils de gestion de projet</a></li>
+      <li><a href="Chapitre4-2.mp3">4.2 - Utilisation de Jira pour les projets complexes</a></li>
+      <li><a href="Chapitre4-3.mp3">4.3 - Trello : Simplicité et flexibilité</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 5 - L'APPROCHE LEAN STARTUP : EXPÉRIMENTATION RAPIDE ET VALIDATION DES HYPOTHÈSES</li>
+    <ul>
+      <li><a href="Chapitre5-1.mp3">5.1 - Principes de l'approche Lean Startup</a></li>
+      <li><a href="Chapitre5-2.mp3">5.2 - Validation des hypothèses par des tests utilisateurs</a></li>
+      <li><a href="Chapitre5-3.mp3">5.3 - Itération continue pour l'amélioration du produit</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 6 - L'IMPORTANCE DE L'ANALYSE DES DONNÉES : COMMENT INTERPRÉTER LES RETOURS UTILISATEURS</li>
+    <ul>
+      <li><a href="Chapitre6-1.mp3">6.1 - Collecte et gestion des données utilisateur</a></li>
+      <li><a href="Chapitre6-2.mp3">6.2 - Analyse des données pour identifier les opportunités</a></li>
+      <li><a href="Chapitre6-3.mp3">6.3 - Utilisation des données pour orienter les décisions stratégiques</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 7 - ALIGNEMENT STRATÉGIQUE : CRÉER UNE VISION PRODUIT CLAIRE ET COHÉRENTE AVEC LES OBJECTIFS D'ENTREPRISE</li>
+    <ul>
+      <li><a href="Chapitre7-1.mp3">7.1 - Définir une vision produit inspirante</a></li>
+      <li><a href="Chapitre7-2.mp3">7.2 - Aligner la vision produit avec les objectifs stratégiques</a></li>
+      <li><a href="Chapitre7-3.mp3">7.3 - Communiquer efficacement la vision produit</a></li>
+    </ul>
+
+    <li style="font-weight: bold;">Chapitre 8 - GESTION DES PARTIES PRENANTES : COMMUNICATION ET RÉSOLUTION DE CONFLITS</li>
+    <ul>
+      <li><a href="Chapitre8-1.mp3">8.1 - Identifier et comprendre les parties prenantes</a></li>
+      <li><a href="Chapitre8-2.mp3">8.2 - Techniques de communication pour une collaboration efficace</a></li>
+      <li><a href="Chapitre8-3.mp3">8.3 - Gestion et résolution des conflits</a></li>
+    </ul>
+
+    <li><a href="Conclusion.mp3" style="font-weight: bold;">CONCLUSION - L'AGILITÉ COMME MOTEUR DE L'INNOVATION DURABLE</a></li>
+  </ul>
+
+  <p><a href="ID-0-35-Annexes.pdf" target="_blank">📄 Consulter les annexes du livre</a></p>
+  <p><a href="mentions_legales.pdf">Mentions légales</a></p>
+
+  <script src="plyr.polyfilled.js"></script>
+  <script src="lecteur.js"></script>
+</body>
+</html>
